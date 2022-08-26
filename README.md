@@ -66,13 +66,6 @@ xml_object_clicks:"",test_age:9,zscore_a:0.25022748,zscore_t:1.295495495,zscore_
 }
 
 ## BackLog
-1. Get a copy of structure of DataBase with a little of data as example.
-2. Improving computing of current paramtres as microsevice on Python/Flask (BlackBox): creating endpoint with analytics and filling relevant tables on database. _By this we take out computing process from NodeJS code_
-3. Improving R-models to current BlackBox (for computing more parameters).
-4. Developing FrontEnd and PDF-reports for new elements of knowledge. 
-5. Implamentation endpoints for autonomus service (get request/give responds).
-6. Implamentation endpoints to architecture of NodeJS-back end (for realtime analytics).
-
 
 1. Делаем прорект разработки (как все будет выглядеть и взаимодействовать) Для этого получаем копию структурв БД и тестовый набор данных как пример. А также код NodeJs. (Идеальный вариант - развернуть на dev-сервере) Для того, чтобы разобраться со струкутной данных и разобраться с архитектрурой NodeJS.
 2. Реализуем на Python функциональность, которая на данный момент реализуется на NodeJS (существующие 4 параметра для отчета). Этим мы дублируем существующую функциональность на NodeJS. Для того, чтобы поднять отдельный проецесс на Python, который работает с той же БД, но получает запрос на вычисления от NodeJS.
@@ -86,3 +79,12 @@ xml_object_clicks:"",test_age:9,zscore_a:0.25022748,zscore_t:1.295495495,zscore_
 2. Мы как-то трогаем алгоритм препроцессинга?
 3. Какие именно процессы вычисления защищены авторским правом (принадлежат не нам)?
 4. Какие есть интерфейсы в основном приложении (ребенок/доктор)?
+
+
+## Eng
+1. Get a copy of structure of DataBase with a little of data as example.
+2. Improving computing of current paramtres as microsevice on Python/Flask (BlackBox): creating endpoint with analytics and filling relevant tables on database. _By this we take out computing process from NodeJS code_
+3. Improving R-models to current BlackBox (for computing more parameters).
+4. Developing FrontEnd and PDF-reports for new elements of knowledge. 
+5. Implamentation endpoints for autonomus service (get request/give responds).
+6. Implamentation endpoints to architecture of NodeJS-back end (for realtime analytics).
