@@ -1,5 +1,32 @@
 # moxo
 
+
+## BackLog
+
+1. Делаем прорект разработки (как все будет выглядеть и взаимодействовать) Для этого получаем копию структурв БД и тестовый набор данных как пример. А также код NodeJs. (Идеальный вариант - развернуть на dev-сервере) Для того, чтобы разобраться со струкутной данных и разобраться с архитектрурой NodeJS.
+2. Реализуем на Python функциональность, которая на данный момент реализуется на NodeJS (существующие 4 параметра для отчета). Этим мы дублируем существующую функциональность на NodeJS. Для того, чтобы поднять отдельный проецесс на Python, который работает с той же БД, но получает запрос на вычисления от NodeJS.
+3. Внедряем разработанные на R модели для работы с данными (через использование моделей R в Python или переписванию моделей R на Python). _Оставляем R для экспериментов и работы с данными, но в реализации - это может быть переход на Python полностью или realtime-взаимодействие Python-R._
+4. Разрабатываем интерфейс и дополнение к PDF-отчету для работы с новыми знаниями (берутся из новых таблиц БД).
+5. Реализуем эндпоинты для автономной работы сервиса.
+6. Внедряем взаимодействие с внешним сервисом в существующее приложение.
+
+**Вопросы:**
+1. Какой алгоритм считает первичные коэффиценты (делает препроцессинг)? 
+2. Мы как-то трогаем алгоритм препроцессинга?
+3. Какие именно процессы вычисления защищены авторским правом (принадлежат не нам)?
+4. Какие есть интерфейсы в основном приложении (ребенок/доктор)?
+
+
+## Eng
+1. Get a copy of structure of DataBase with a little of data as example.
+2. Improving computing of current paramtres as microsevice on Python/Flask (BlackBox): creating endpoint with analytics and filling relevant tables on database. _By this we take out computing process from NodeJS code_
+3. Improving R-models to current BlackBox (for computing more parameters).
+4. Developing FrontEnd and PDF-reports for new elements of knowledge. 
+5. Implamentation endpoints for autonomus service (get request/give responds).
+6. Implamentation endpoints to architecture of NodeJS-back end (for realtime analytics).
+
+
+
 About elements for developing.
 ## BackEnd. Data Scheme
 #### Input of black box  
@@ -64,27 +91,3 @@ About elements for developing.
 ""GPAvr"":""0.562"",""lvlNum"":8,""GVPAvr"":""0.127""}]",
 xml_object_clicks:"",test_age:9,zscore_a:0.25022748,zscore_t:1.295495495,zscore_h:0.418705036,zscore_i:1.273542601,modify_user_id:1784513,child_id:"",details_id:"",profile_type:"",focus_table_imported:"",test_age_months:115,treatment_id:2,other_treatment:"",findings:"",summary:"",observer_name:"",record_type:test,tag1:"",tag2:"",tag3:"",tag4:"",moxo_run_date:44:04.9,x:10,t0:1644921860,ott:91d136dbe072bd2dea2d34af90f3bca2,successfull_practice:TRUE,a1:32,a2:31,a3:31,a4:30,a5:33,a6:31,a7:30,a8:22,t1:15,t2:19,t3:22,t4:16,t5:18,t6:22,t7:19,t8:3,h1:1,h2:6,h3:1,h4:4,h5:8,h6:5,h7:1,h8:1,i1:4,i2:4,i3:0,i4:2,i5:3,i6:3,i7:4,i8:0,medication_name:None,doctor_name:"",patient_name:"",testordinal:1,testcount:1,test_tag:Test,gender:M,signed_zscore_a:-0.25022748,signed_zscore_t:-1.295495495,signed_zscore_h:-0.418705036,signed_zscore_i:-1.273542601,country_for_norms:8,tagging_type:""
 }
-
-## BackLog
-
-1. Делаем прорект разработки (как все будет выглядеть и взаимодействовать) Для этого получаем копию структурв БД и тестовый набор данных как пример. А также код NodeJs. (Идеальный вариант - развернуть на dev-сервере) Для того, чтобы разобраться со струкутной данных и разобраться с архитектрурой NodeJS.
-2. Реализуем на Python функциональность, которая на данный момент реализуется на NodeJS (существующие 4 параметра для отчета). Этим мы дублируем существующую функциональность на NodeJS. Для того, чтобы поднять отдельный проецесс на Python, который работает с той же БД, но получает запрос на вычисления от NodeJS.
-3. Внедряем разработанные на R модели для работы с данными (через использование моделей R в Python или переписванию моделей R на Python). _Оставляем R для экспериментов и работы с данными, но в реализации - это может быть переход на Python полностью или realtime-взаимодействие Python-R._
-4. Разрабатываем интерфейс и дополнение к PDF-отчету для работы с новыми знаниями (берутся из новых таблиц БД).
-5. Реализуем эндпоинты для автономной работы сервиса.
-6. Внедряем взаимодействие с внешним сервисом в существующее приложение.
-
-**Вопросы:**
-1. Какой алгоритм считает первичные коэффиценты (делает препроцессинг)? 
-2. Мы как-то трогаем алгоритм препроцессинга?
-3. Какие именно процессы вычисления защищены авторским правом (принадлежат не нам)?
-4. Какие есть интерфейсы в основном приложении (ребенок/доктор)?
-
-
-## Eng
-1. Get a copy of structure of DataBase with a little of data as example.
-2. Improving computing of current paramtres as microsevice on Python/Flask (BlackBox): creating endpoint with analytics and filling relevant tables on database. _By this we take out computing process from NodeJS code_
-3. Improving R-models to current BlackBox (for computing more parameters).
-4. Developing FrontEnd and PDF-reports for new elements of knowledge. 
-5. Implamentation endpoints for autonomus service (get request/give responds).
-6. Implamentation endpoints to architecture of NodeJS-back end (for realtime analytics).
